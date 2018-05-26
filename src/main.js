@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss'
 
 Vue.config.productionTip = false
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
