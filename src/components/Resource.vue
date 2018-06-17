@@ -7,13 +7,13 @@
     <h4>Instalacija:</h4>
     <p>Pakovanje instaliramo unosom sledeće komande u našu konzolu:</p>
     <pre>
-    	<code>
-    		npm install --save axios vue-axios
-    	</code>
+      <code>
+        npm install --save axios vue-axios
+      </code>
     </pre>
     <p>Uspešno instalirano pakovajne:</p>
     <div class="cmd-img-holder">
-      <img src="../assets/installedaxios.png">
+      <img src="../assets/installedaxios.png" alt="cmd - instalacija npm pakovanja za ajax pozive">
     </div>
     <p>Nakon uspesnog instaliranja ovog pakovanja u nas projekat moramo ga povezati sa nasom SPA.</p>
     <p>Pozicioniramo se u main.js fajl i imporujemo fajlove koje smo ranije instalirali (ovi fajlovi će nam biti dostupni preko node-modules foldera)</p>
@@ -74,7 +74,7 @@
     <pre>
       <code>
         <textarea disabled="true" style="border: none;background-color:inherit; width: 100%; resize:none; height: 390px">
-          <div class="table-responsive">          
+          <div class="table-responsive">
             <table class="table">
               <thead>
                 <tr>
@@ -98,7 +98,7 @@
       </code>
     </pre>
     <button @click="pokupiPodatke">pokupi podatke</button>
-    <div class="table-responsive">          
+    <div class="table-responsive">
       <table class="table">
         <thead>
           <tr>
@@ -130,13 +130,13 @@ export default {
     }
   },
   methods: {
-  	pokupiPodatke () {
-  		this.axios.get('https://jsonplaceholder.typicode.com/posts')
-  			.then(response => {
-  				console.log(response, 'this is jsonplaceholder')
+    pokupiPodatke () {
+      this.axios.get('https://jsonplaceholder.typicode.com/posts')
+        .then(response => {
+          console.log(response, 'this is jsonplaceholder')
           this.podaci = response.data
-  			})
-  	}
+        })
+    }
   }
 }
 </script>

@@ -13,10 +13,10 @@
         <li><router-link :to="{name: 'test'}">Test</router-link></li>
       </ul> -->
       <div class="row">
-        <div class="col-md-3"><a href="" target="blank">Profesor</a></div>
-        <div class="col-md-3"><a href="" target="blank">Asistent</a></div>
-        <div class="col-md-3"><a href="" target="blank">Milija Nedović</a></div>
-        <div class="col-md-3"><a href="" target="blank">Marko Tomić</a></div>
+        <div class="col-md-3 text-center"><a href="http://www.ftn.kg.ac.rs/nenad.stefanovic" target="blank">dr Nenad Stefanović</a></div>
+        <div class="col-md-3 text-center"><a href="http://www.ftn.kg.ac.rs/mladen.janjic" target="blank">mr Mladen Janjić</a></div>
+        <div class="col-md-3 text-center"><a href="https://www.facebook.com/milija.nedovic" target="blank">Milija Nedović</a></div>
+        <div class="col-md-3 text-center"><a href="https://www.linkedin.com/in/marko-tomic-835193121/" target="blank">Marko Tomić</a></div>
       </div>
     </div>
   </nav>
@@ -38,5 +38,13 @@ export default {
 }
 .navbar {
   margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #777;
+  line-height: 50px;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -37,7 +37,7 @@ export default new Router({
       name: 'routing',
       component: Routing
     },
-     {
+    {
       path: 'resource',
       name: 'resource',
       component: Resource

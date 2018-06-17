@@ -5,7 +5,7 @@
       Vue.js aplikacija se sastoji od mnogo komponenata (fajlova) sa ekstenzijom .vue; Ono što karakteriše vue komponente za razliku od komponenata nekih drugih framework-ova je to da se u vue komponenti nalazi html, logika i stilovi vezani samo za tu komponentu. Na ovaj način app je podeljena u manje delove i upravljanje istom je znatno olakšano.
     </p>
     <div class="browser-img-holder">
-      <img src="../assets/components.png">
+      <img src="../assets/components.png" alt="prikaz strukture komponenti">
     </div>
     <p>Importovanje komponenata se vrši tako što se u script tagu importuje komponenta:</p>
     <pre>
@@ -36,27 +36,27 @@
       Sav html se nalazi u okviru template taga i u njemu može biti samo jedan koreni tag
     </p>
     <div class="browser-img-holder">
-      <img src="../assets/prazanvue.png">
+      <img src="../assets/prazanvue.png" alt="code editor default">
     </div>
     <p>U okviru script taga možemo koristi svako svojstvo es6 javascript standarde (importovati kod, ekstportovati ga, koristiti arrow funkcije itd...)</p>
     <p>Logika vezana isključivo za komponentu se nalazi defaultnom objektu koji se exportuje. U ovom objektu se nalazi sva vue magija. U njemu skladištimo podatke koji su vezani za našu komponentu, pišemo metode koje će se izvršavati u komponenti, primamo podatke sa udaljenih resursa i prikazujemo ih, osluškujemo promene i reagujemo na njih, u njemu radimo svo javascript programiranje.</p>
     <h1>Direktive</h1>
     <p>Prikaz vrednosti iz logike u naš html vršimo pomoću sledećih karakera "(())"</p>
     <div class="browser-img-holder">
-      <img src="../assets/prikaztekstaeditor.png">
+      <img src="../assets/prikaztekstaeditor.png" alt="prikaz teksta u vue-editor">
     </div>
     <div class="browser-img-holder">
-      <img src="../assets/prikaztekstabrowser.png">
+      <img src="../assets/prikaztekstabrowser.png" alt="prikaz teksta u vue-browser">
     </div>
     <p>Pristup promenljivama unutar metoda vrši se dodavanjem "this." ispred njihovog imena</p>
     <p>Vue.js ima veliki broj ugrađenih direktiva koje nam omogućavaju vezu između logike i njenog prikaza na stranu</p>
     <p>v-if direktiva nam omogućava da prikazujemo određeni sadržaj na osnovu istinitosti određene promenljive:</p>
     <div class="browser-img-holder">
-      <img src="../assets/prikaztekstabrowser.png">
+      <img src="../assets/prikaztekstabrowser.png" alt="prikaz sadrzaja na osnovu odredjene vrednosti">
     </div>
     <p>click direkiva nam omogućava da osluškujemo klikove na strani i reagujemo na njih:</p>
     <div class="browser-img-holder">
-      <img src="../assets/codeclick.png">
+      <img src="../assets/codeclick.png" alt="test click direktive">
     </div>
     <h4 v-if="showMsg">{{msg}}</h4>
     <button @click="toggleMessage">prikaži/ukloni h4 element iznad dugmeta</button>
