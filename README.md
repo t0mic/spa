@@ -1,6 +1,6 @@
 # spa
 
-> Single page app project
+> Single page app project for university purposes
 
 ## Build Setup
 
